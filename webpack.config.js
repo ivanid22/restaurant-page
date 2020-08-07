@@ -6,4 +6,10 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
     },
+    module: {
+        rules: [
+            { test: /\.s?css/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+            { test: /\.(png|jpe?g|gif)$/i, use: ['file-loader'] }
+        ]
+    }
 }

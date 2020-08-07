@@ -11,7 +11,17 @@
   "author": "Ivan Diaz",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }

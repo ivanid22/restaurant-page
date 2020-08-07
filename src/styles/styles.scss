@@ -1,0 +1,48 @@
+@import "~bootstrap/scss/bootstrap";
+
+$color-1: #372F2B;
+$color-2: #CFB19D;
+$color-3: #87ABB9;
+$color-4: #5C79A5;
+
+html {
+  font-size: 16px;
+}
+
+.content {
+  height: 100vh;
+}
+
+.header {
+  background-color: darken($color-1, 30%);
+  display: flex;
+  height: 10vh;
+  min-height: 5rem;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.footer {
+  background-color: darken($color-1, 30%);
+  height: 5vh;
+  min-height: 3rem;
+}
+
+.main {
+  position: relative;
+  height: 85vh;
+}
+
+.main::after {
+    content: "";
+    background: url('../images/main-background.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
