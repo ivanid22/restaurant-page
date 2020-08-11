@@ -1,7 +1,8 @@
 import {header} from './header';
 import {footer} from './footer';
 import {welcomePage} from './welcome';
-import { contactPage } from "./contact";
+import { contactPage } from './contact';
+import menuPage from './menu';
 
 const navigate = (menuButton, content) => {
   const container = document.querySelector('.content');
@@ -16,6 +17,9 @@ const navigate = (menuButton, content) => {
   }
   navButtons[1].onclick = () => {
     navigate(1, contactPage);
+  }
+  navButtons[2].onclick = () => {
+    navigate(2, menuPage);
   }
 }
 

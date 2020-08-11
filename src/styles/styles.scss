@@ -111,3 +111,15 @@ body {
   padding: 2rem;
   color: $color-1;
 }
+
+.card-body {
+  background-color: darken($color-2, 50%);
+}
+
+.card h5 {
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 1rem;
+}

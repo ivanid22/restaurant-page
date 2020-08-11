@@ -23,6 +23,9 @@ const menuButton = () => {
   const b = document.createElement('button');
   b.classList = "btn btn-menu"
   b.innerText = "Browse our menu";
+  b.onclick = () => {
+    document.querySelectorAll('.nav-element')[2].click();
+  };
   return b;
 }
 
