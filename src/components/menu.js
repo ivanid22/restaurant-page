@@ -21,9 +21,9 @@ const menuPageItem = (desc, title, imgUrl) => {
   paragraph.innerText = desc;
   cardBody.append(titleElement, paragraph);
   cardContainer.append(imgCover, cardBody);
-  mainContainer.appendChild(cardContainer)
+  mainContainer.appendChild(cardContainer);
   return mainContainer;
-}
+};
 
 const menuPage = () => {
   const pageContainer = document.createElement('div');
@@ -38,6 +38,6 @@ const menuPage = () => {
   elementsContainer.appendChild(row);
   pageContainer.appendChild(elementsContainer);
   return pageContainer;
-}
+};
 
 export default menuPage;

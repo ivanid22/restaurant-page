@@ -3,9 +3,9 @@ const icon = (classes) => {
   ic.classList = classes;
   const link = document.createElement('a');
   link.setAttribute('href', '#');
-  link.appendChild(ic)
+  link.appendChild(ic);
   return link;
-}
+};
 
 const paragraph = () => {
   const cont = document.createElement('div');
@@ -14,7 +14,7 @@ const paragraph = () => {
   p.innerText = 'Feel free to contact us through email and social media!';
   cont.appendChild(p);
   return cont;
-}
+};
 
 const social = () => {
   const sc = document.createElement('div');
@@ -24,15 +24,15 @@ const social = () => {
   const mail = icon('social-icon far fa-envelope');
   sc.append(paragraph(), twitter, facebook, mail);
   return sc;
-}
+};
 
 const contactPage = () => {
   const cont = document.createElement('div');
-  cont.classList = "main";
+  cont.classList = 'main';
   cont.appendChild(social());
   return cont;
-}
+};
 
 module.exports = {
-  contactPage
+  contactPage,
 };

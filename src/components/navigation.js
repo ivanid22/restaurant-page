@@ -1,6 +1,6 @@
-import {header} from './header';
-import {footer} from './footer';
-import {welcomePage} from './welcome';
+import { header } from './header';
+import { footer } from './footer';
+import { welcomePage } from './welcome';
 import { contactPage } from './contact';
 import menuPage from './menu';
 
@@ -14,14 +14,14 @@ const navigate = (menuButton, content) => {
   navButtons[menuButton].classList.add('selected');
   navButtons[0].onclick = () => {
     navigate(0, welcomePage);
-  }
+  };
   navButtons[1].onclick = () => {
     navigate(1, contactPage);
-  }
+  };
   navButtons[2].onclick = () => {
     navigate(2, menuPage);
-  }
-}
+  };
+};
 
 const init = () => {
   const content = document.querySelector('.content');
@@ -31,6 +31,6 @@ const init = () => {
   content.appendChild(footer());
 
   navigate(0, welcomePage);
-}
+};
 
 export default init;
