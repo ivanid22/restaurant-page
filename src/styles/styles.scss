@@ -46,6 +46,7 @@ body {
   background-color: $color-1;
   font-size: 2rem;
   padding: 0.5em;
+  cursor: pointer;
 }
 
 .footer {
@@ -58,25 +59,45 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   height: 85vh;
 }
 
 .main h3 {
-  font-size: 5rem;
-  color: $color-1;
+  font-size: 6rem;
+  color: $color-2;
+}
+
+.main p {
+  font-size: 1rem;
+}
+
+.main > button {
+  box-shadow: 3px 3px 2px 2px $color-1;
 }
 
 .main::after {
-    content: "";
-    background: url('../images/main-background.jpg');
-    background-position: center;
-    background-size: cover;
-    opacity: 0.85;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
+  content: "";
+  background: url('../images/main-background.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.btn-menu {
+  font-size: 2rem;
+  padding: 1em;
+  background-color: $color-1;
+  color: $color-2;
+}
+
+.paragraph-container {
+  text-shadow: 3px 3px 2px $color-1;
+}
