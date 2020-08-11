@@ -70,7 +70,7 @@ body {
 }
 
 .main p {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .main > button {
@@ -100,4 +100,14 @@ body {
 
 .paragraph-container {
   text-shadow: 3px 3px 2px $color-1;
+}
+
+.social-container {
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 4rem;
+  padding: 2rem;
+  color: $color-1;
 }

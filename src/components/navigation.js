@@ -1,6 +1,7 @@
 import {header} from './header';
 import {footer} from './footer';
 import {welcomePage} from './welcome';
+import { contactPage } from "./contact";
 
 const navigate = (menuButton, content) => {
   const container = document.querySelector('.content');
@@ -12,6 +13,9 @@ const navigate = (menuButton, content) => {
   navButtons[menuButton].classList.add('selected');
   navButtons[0].onclick = () => {
     navigate(0, welcomePage);
+  }
+  navButtons[1].onclick = () => {
+    navigate(1, contactPage);
   }
 }
 
