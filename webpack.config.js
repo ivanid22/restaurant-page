@@ -13,4 +13,9 @@ module.exports = {
       { test: /\.svg$/i, use: ['raw-loader'] },
     ],
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+  },
 };
