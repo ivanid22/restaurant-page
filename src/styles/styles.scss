@@ -1,0 +1,128 @@
+@import "~bootstrap/scss/bootstrap";
+
+$color-1: #372f2b;
+$color-2: #cfb19d;
+$color-3: #87abb9;
+$color-4: #5c79a5;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: $color-2;
+}
+
+.content {
+  height: 100vh;
+}
+
+.header > img {
+  color: $color-2;
+  width: 100px;
+}
+
+.header {
+  background-color: darken($color-2, 50%);
+  display: flex;
+  height: 10vh;
+  min-height: 5rem;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.selected {
+  border-bottom: 5px solid $color-2;
+}
+
+.nav-element {
+  color: $color-2;
+  background-color: $color-1;
+  font-size: 2rem;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: darken($color-2, 50%);
+  height: 5vh;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 85vh;
+}
+
+.main h3 {
+  font-size: 6rem;
+  color: $color-2;
+}
+
+.main p {
+  font-size: 2rem;
+}
+
+.main > button {
+  box-shadow: 3px 3px 2px 2px $color-1;
+}
+
+.main::after {
+  content: "";
+  background: url('../images/main-background.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-menu {
+  font-size: 2rem;
+  padding: 1em;
+  background-color: $color-1;
+  color: $color-2;
+}
+
+.paragraph-container {
+  text-shadow: 3px 3px 2px $color-1;
+}
+
+.social-container {
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 4rem;
+  padding: 2rem;
+  color: $color-1;
+}
+
+.card-body {
+  background-color: darken($color-2, 50%);
+}
+
+.card h5 {
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
