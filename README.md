@@ -2,7 +2,7 @@
 
 This project is all about DOM manipulation with javascript. Instead of designing the layout for the page directly on HTML, we set up a bare index file and add every single component on the page through javascript. The result is a fully functional website.
 
-  ![App Preview](screenshot.png) 
+  ![App Preview](https://github.com/ivanid22/restaurant-page/blob/development/screenshot.PNG?raw=true) 
   ## Liveview
   - [Live version](https://rawcdn.githack.com/ivanid22/restaurant-page/88d8cfca122246536ac4e87dd3867a86d5aa9379/dist/index.html) 
   
